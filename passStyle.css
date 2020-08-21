@@ -36,6 +36,8 @@ input[type=checkbox] {
 	width: 350px;
 	max-width: 100%;
 	margin-top : -15%;
+	border-radius: 20px;
+
 }
 
 .result-container {
@@ -49,6 +51,8 @@ input[type=checkbox] {
 	padding: 12px 10px;
 	height: 50px;
 	width: 100%;
+	border-radius: 20px;
+
 }
 
 .result-container #result {
@@ -63,6 +67,7 @@ input[type=checkbox] {
 	right: 5px;
 	height: 40px;
 	width: 40px;
+	border-radius: 20px;
 }
 
 .btn {
@@ -77,6 +82,7 @@ input[type=checkbox] {
 .btn-large {
 	display: block;
 	width: 100%;
+	border-radius: 20px;
 }
 
 .setting {
