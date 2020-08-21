@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="container">
-	<h2>Password Generator</h2>
+	<h2>Random Password Generator</h2>
 	<div class="result-container">
 		<span id="result"></span>
 		<button class="btn" id="clipboard">
@@ -21,7 +21,7 @@
 	<div class="settings">
 		<div class="setting">
 			<label>Password length</label>
-			<input type="number" id="length" min='4' max='20' value='20' />
+			<input type="number" id="length" min='8' max='30' value='20' />
 		</div>
 		<div class="setting">
 			<label>Include uppercase letters</label> 
@@ -117,6 +117,16 @@ generate.addEventListener('click', () => {
 	const hasUpper = uppercaseEl.checked;
 	const hasNumber = numbersEl.checked;
 	const hasSymbol = symbolsEl.checked;
+	
+	if(length>30) {
+		alert('Plz enter the length Less than 31');
+		return;
+	}
+	
+	if(length<8) {
+		alert('Plz enter the length Greater than 8');
+		return;
+	}
 	
 	resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
 });
